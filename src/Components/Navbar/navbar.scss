@@ -1,0 +1,47 @@
+/* colors */
+:root {
+  --PrimaryColor: hsl(26, 93%, 50%);
+  --HoverColor: hsl(26, 98%, 42%);
+  --whiteColor: hsl(0, 6%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 96%);
+  --greyBg: hsl(0, 0%, 93%);
+  --greyText: rgb(198, 198, 198);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.navBarSection {
+  .header {
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: transparent;
+      width: 100%;
+      padding: 1rem;
+      z-index: 1000;
+
+      .logoDiv {
+          .logo {
+              color: var(--PrimaryColor); 
+              font-weight: 500;
+              cursor: pointer;
+              align-items: center;
+              justify-content: center;
+
+              .icon{
+                color: var(--PrimaryColor);
+                font-size: 25px;
+              }
+          }
+      }
+
+      
+      @media (max-width: 768px) {
+        .navBar {
+          background: var(--greyBg);
+        }
+      }
+  }
+}
